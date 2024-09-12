@@ -1,0 +1,52 @@
+
+
+h1 { background-color: rgb(135, 161, 51); 
+    color:rgb(188, 35, 180);
+    font-family: cursive;
+   }
+nav,aside{
+    
+    background-color: rgb(145, 205, 206); 
+    color:rgb(143, 191, 80);
+    font-family: cursive;
+    margin-top:10px;
+  
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 2px;
+    border-color: rgb(33, 15, 223);
+    border-style:solid;
+}
+.nav{
+    border-color: rgb(153, 36, 188);
+    background-color: rgb(255, 251, 0);
+    border-radius: 20px;
+    text-decoration: none;
+}
+.nav:hover{
+    background-color: blueviolet;
+}
+legend,label{
+    font-weight: bold;
+}
+aside:hover{
+    background-color: blueviolet;
+}
+body{
+    
+    font-family: Arial,Helvetica;
+}
+h2 + table{
+    border-collapse:collapse;
+    border: 1px solid black;
+}
+h2+table th{
+    background-color: aqua;
+}
+table,tr,td{
+    border: 1px solid black;
+}
+#containernav{
+    display:flex;
+    flex-wrap: wrap;
+}

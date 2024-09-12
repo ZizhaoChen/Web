@@ -1,0 +1,45 @@
+input:invalid:required{
+    border-color: red;
+}
+input:valid:required{
+    border-color: green;
+}
+input:focus{
+    background-color: rgba(15, 243, 34, 0.876);
+}
+.req::after {
+    content: "*";
+    font-weight: 300;
+    font-size: x-small;
+    color:red;
+}
+
+input[type = submit]{
+    background-color: rgb(218, 32, 209);
+    border-color: rgb(17, 235, 97);
+    border-radius: 10px;
+}
+input[type = submit]:hover{
+    rotate: 180deg;
+}
+input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+legend{
+    border-style: solid;
+    border-radius: 20px;
+    text-align:center;
+    border-top: none;
+    border-bottom: none;
+    border-color: black;
+    
+    
+}
+fieldset{
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    
+}

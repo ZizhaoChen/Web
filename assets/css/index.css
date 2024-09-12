@@ -1,0 +1,14 @@
+#pod{
+    
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px ;
+    
+}
+#inhalt{
+    
+    display: flex;
+    flex-wrap: wrap;
+
+}

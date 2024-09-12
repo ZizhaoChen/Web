@@ -1,0 +1,44 @@
+#containerBody{
+    display:grid;
+    grid-template-areas: "header header header"
+                          "nav nav nav"
+                          "main main aside"
+                          "main main aside"
+                          "main main aside"
+                          "footer footer footer";
+    grid-template-columns: 20% 40% 40%;
+}
+#containerMain{
+    display: grid;
+    grid-template-areas: "Information Bild"
+                         
+                          "List List"                ;
+}
+
+header{ grid-area: header; margin:3px;}
+nav{ grid-area: nav;margin:3px;}
+main{grid-area: main;margin:3px;}
+aside{grid-area: aside;margin:3px;}
+footer{grid-area: footer;margin:3px;}
+#information{ grid-area: Information; margin:3px;}
+#Bild{ grid-area: Bild; margin:3px;}
+#List{ grid-area: List; margin:3px;}
+@media screen and (width<=768px) {
+    #containerBody {
+        display:grid;
+        grid-template-areas: "header header header"
+                             "nav nav nav"
+                            "main main main"
+                            "main main main"
+                            "aside aside aside"
+                            "footer footer foot";
+        grid-template-columns: 20% 40% 40%;
+    }
+}
+@media screen and (width<=480px) {
+    #containerMain{
+        grid-template-areas: "Information Information"
+                             "Bild Bild"
+                             "List List"                ;
+    }
+}
