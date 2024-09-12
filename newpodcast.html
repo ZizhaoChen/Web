@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Neue Podcast</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css"  href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css"  href="assets/css/form.css">
+        <link rel="stylesheet" type="text/css"  href="assets/css/grid.css">
+    </head>
+    <body id="containerBody">
+        <header>
+            <img src="assets/img/apple-podcasts__b2lbt81axo2u_og.png"alt="Logo" width="100">
+            <h1>Web-anwendungen</h1>
+        </header>
+        <nav id="containernav">
+            <a href="index.html" class="nav">List der abonnierten Podcast</a>|<a href="podcast.html" class="nav"> Detailseite zu einem Podcast</a>|<a href="episode.html" class="nav">Detailseite zu einer Episode</a>|<a href="newpodcast.html" class="nav">Neue Podcast</a>
+                                                                                                                                                                                                   
+        </nav>
+        <main>
+            <form action="https://labs.inf.fh-dortmund.de/podcastService/testCreatePodcast.php" method="post">
+                <fieldset>
+                <legend>Podcast-Information</legend>   
+                    <label class="req" for="Titel" >Titel:
+                        <input  type="text"  name="pctitle"  size="50" maxlength="100"  placeholder="Martin" pattern="[A-Z][A-Za-z0-9]*" required ></label><br>
+                
+                
+                    <label for="Kategorie(n)">Kategorie(n):<br>
+                        <input type="checkbox" name="pccategories" 
+                           value="HP">Hip-pop<br>
+                        <input type="checkbox" name="pccategories" 
+                           value="Pop">Pop<br>
+                        <input type="checkbox" name="pccategories" 
+                           value="JZ">Jazz<br>
+                        <input type="checkbox" name="pccategories" 
+                           value="RK">Rock</label><br>
+                    <label for="Beschreibung">Beschreibung:<br>
+                        <textarea cols="60" rows="5" maxlength="500" name="pcdescription" placeholder="Ein gut video"></textarea></label><br>
+                </fieldset>
+                <fieldset>
+                <legend>Verantwortlcihen Personen</legend>    
+                    <label for="Autoren" class="req">Autor(en):
+                        <input type="text"  name="pcauthors" placeholder="Martin,Danniel" required pattern="[^,]+(,[^,]+)*"class="req"></label><br>
+                    <label for="Name des Besitzers" class="req">Name des Besitzers:
+                        <input type="text" name="pcownername" placeholder="Martin" required></label><br>
+                    <label for="E-Mail des Besitzers" class="req" >E-Mail des Besitzers:
+                        <input type="email" name="pcowneremail"placeholder="Martin@ggmail.com"required></label><br>
+
+                    <label for="Letztes Update(Datum)" class="req">Letztes Update(Datum)
+                        <input type="date" name="pclastupdatedate" placeholder="2000-01-01" min="2000-01-01" required></label><br>
+                    <label for="Letztes Update(Uhrzeit)" class="req">Letztes Update(Uhrzeit)
+                        <input type="time" name="pclastupdatetime" placeholder="01:01" required></label><br>
+                </fieldset>
+                <input type="submit" value="Absenden">
+            </form>
+            
+        </main>
+        <aside>
+            <h2>Neuste Episode</h2>
+            <ul>
+               <li>24.11.2035:programmier.bar-Deep Drive 312:React ist nun doch ein Framework</li>
+               <li>24.11.2035:programmier.bar-Deep Drive 312:React ist nun doch ein Framework</li>.
+            </ul>
+        </aside>
+        <footer>
+             <small>&copy; by Webtech Inc</small>
+        </footer>
+
+    </body>
+</html>

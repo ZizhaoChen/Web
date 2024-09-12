@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>List der abonnierten Podcast</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"  href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css"  href="assets/css/form.css">
+    <link rel="stylesheet" type="text/css"  href="assets/css/flex.css">
+    <link rel="stylesheet" type="text/css"  href="assets/css/index.css">
+    <script src="assets/js/script.js"></script>
+    
+  </head>
+  <body >
+    <div id="containerMax">
+    <header>
+      <img src="assets/img/apple-podcasts__b2lbt81axo2u_og.png"alt="Logo" width="100">
+      
+        <h1>Web-anwendungen</h1>
+    </header>
+  
+    <nav id="containernav">
+      <a href="index.html" class="nav">List der abonnierten Podcast</a>|<a href="podcast.html" class="nav"> Detailseite zu einem Podcast</a>|<a href="episode.html" class="nav">Detailseite zu einer Episode</a>|<a href="newpodcast.html" class="nav">Neue Podcast</a>
+                                                                                                                                                                                               
+    </nav>
+  </div>
+    <div id="containerMain">
+    <main >
+        <h2>Liste der abonnierten Podcasts</h2>
+        <button id="button">Listenansicht</button>
+        <div id="listen">
+        <ul>
+          <li><a href="podcast.html">Working Draft:</a>8 Episode </li>
+          <li><a href="podcast.html">Eating Draft:</a>5 Episode</li>
+          <li><a href="podcast.html">Drinking Draft:</a>3 Episode</li>
+          <li><a href="podcast.html">Sleeping Draft:</a>7 Episode</li>
+        </ul>
+        </div>
+        <div id="inhalt">
+          <a href="podcast.html" id="pod"><figure><img src="assets/img/logo2.webp"alt="Logo" width="250"> <figcaption> Walking Draft</figcaption></figure></a> 
+          <a href="podcast.html" id="pod"><figure><img src="assets/img/logo2.webp"alt="Logo" width="250"><figcaption> Eating Draft</figcaption></figure></a> 
+          <a href="podcast.html" id="pod"><figure><img src="assets/img/logo2.webp"alt="Logo" width="250"> <figcaption>Drinking Draft</figcaption></figure></a> 
+          <a href="podcast.html" id="pod"><figure><img src="assets/img/logo2.webp"alt="Logo" width="250"><figcaption> Sleeping Draft</figcaption></figure></a>
+         </div>  
+        <form action="https://labs.inf.fh-dortmund.de/podcastService/testPodcastSearch.php" method="get">
+          Title:
+          <input type="text" name="pctitle" size="50" maxlength="100"  pattern="[A-Z][A-Za-z0-9]*" required>
+          <input type="submit" value="Absenden">
+        </form>
+      </main>
+    <aside>
+      <h2>Neuste Episode</h2>
+      <ul>
+         <li>24.11.2035:programmier.bar-Deep Drive 312:React ist nun doch ein Framework</li>
+         <li>24.11.2035:programmier.bar-Deep Drive 312:React ist nun doch ein Framework</li>.
+      </ul>
+    </aside>
+  </div>
+    <footer>
+         &copy; by Webtech Inc
+    </footer>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
